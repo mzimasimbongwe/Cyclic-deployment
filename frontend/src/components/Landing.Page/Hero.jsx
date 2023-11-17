@@ -1,9 +1,10 @@
 import React from "react";
-import { bgvideo, heroImg } from "../../assets";
+import { apply, bgvideo, heroImg } from "../../assets";
 import AboutUs from "./About";
 import StudyWithUs from "./Study.Page";
 import LatestUpdates from "./Updates";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const isMobileScreen = window.innerWidth < 768;
@@ -47,8 +48,18 @@ const Hero = () => {
               </p>
             </div>
             {!isMobileScreen && (
-              <img src={heroImg} className="w-full rounded-lg h-auto" />
+              <div className="flex flex-col justify-center items-center">
+                <img src={heroImg} className="w-full rounded-lg h-auto" />
+              </div>
             )}
+          </div>
+          <div className="flex justify-center mt-8">
+            <Link to="/signup">
+              <button className="border border-[#47DEFF] flex items-center px-6 py-2 rounded-md bg-black text-white text-lg lg:text-xl font-semibold gap-2 transition transform hover:bg-[#47DEFF] animate-bounce hover:scale-105 mt-20">
+                Apply Now!
+                <img src={apply} alt="Apply Icon" />
+              </button>
+            </Link>
           </div>
         </div>
       </div>

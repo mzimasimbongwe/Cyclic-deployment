@@ -121,20 +121,21 @@ function SignupS() {
           setconfirmPassword("");
         }, 5000);
       } catch (error) {
-        // Handle error response
-        if (error.response && error.response.status === 400) {
-          setMessage("User already exists. Please go to login");
-        } else {
-          setMessage("An error occurred during registration");
+        if (formIsValid) {
+          if (error.response && error.response.status === 400) {
+            setMessage("Fill in all the inputs");
+          } else {
+            setMessage("An error occurred during registration");
+          }
+          setTimeout(() => {
+            setMessage("");
+            setEmail("");
+            setUsername("");
+            setIdnumber("");
+            setPassword("");
+            setconfirmPassword("");
+          }, 5000);
         }
-        setTimeout(() => {
-          setMessage("");
-          setEmail("");
-          setUsername("");
-          setIdnumber("");
-          setPassword("");
-          setconfirmPassword("");
-        }, 5000);
       }
     }
   };

@@ -33,6 +33,12 @@ export default {
       fontFamily: {
         main: ["Public Sans", "sans-serif"],
         subMain: ["Montserrat", "sans-serif"],
+        "h-4": "var(--h-4-font-family)",
+        "h-6": "var(--h-6-font-family)",
+        h1: "var(--h1-font-family)",
+        h5: "var(--h5-font-family)",
+        para: "var(--para-font-family)",
+        "paragraph-body-text": "var(--paragraph-body-text-font-family)",
       },
     },
   },

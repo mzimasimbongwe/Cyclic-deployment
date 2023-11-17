@@ -1,0 +1,47 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --h-4-font-family: "Montserrat-Bold", Helvetica;
+  --h-4-font-size: 25px;
+  --h-4-font-style: normal;
+  --h-4-font-weight: 700;
+  --h-4-letter-spacing: 0px;
+  --h-4-line-height: 100%;
+  --h-6-font-family: "Montserrat-Bold", Helvetica;
+  --h-6-font-size: 16px;
+  --h-6-font-style: normal;
+  --h-6-font-weight: 700;
+  --h-6-letter-spacing: 0px;
+  --h-6-line-height: 100%;
+  --h1-font-family: "Montserrat-Bold", Helvetica;
+  --h1-font-size: 30px;
+  --h1-font-style: normal;
+  --h1-font-weight: 700;
+  --h1-letter-spacing: 0px;
+  --h1-line-height: 100%;
+  --h5-font-family: "Montserrat-Bold", Helvetica;
+  --h5-font-size: 15px;
+  --h5-font-style: normal;
+  --h5-font-weight: 700;
+  --h5-letter-spacing: 0px;
+  --h5-line-height: 100%;
+  --para-font-family: "Montserrat-Medium", Helvetica;
+  --para-font-size: 25px;
+  --para-font-style: normal;
+  --para-font-weight: 500;
+  --para-letter-spacing: -0.5px;
+  --para-line-height: 160.0000023841858%;
+  --paragraph-body-text-font-family: "Montserrat-Medium", Helvetica;
+  --paragraph-body-text-font-size: 16px;
+  --paragraph-body-text-font-style: normal;
+  --paragraph-body-text-font-weight: 500;
+  --paragraph-body-text-letter-spacing: -0.32px;
+  --paragraph-body-text-line-height: 160.0000023841858%;
+}

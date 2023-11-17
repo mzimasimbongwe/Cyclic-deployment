@@ -13,6 +13,9 @@ import id from "./id.svg";
 import passwordsvg from "./password.svg";
 import person from "./person.svg";
 import emailsvg from "./email.svg";
+import mission from "./mission.jpg";
+import vision from "./vision.jpg";
+import views from "./views.jpg";
 
 export {
   logo,
@@ -30,4 +33,7 @@ export {
   passwordsvg,
   person,
   emailsvg,
+  mission,
+  vision,
+  views,
 };

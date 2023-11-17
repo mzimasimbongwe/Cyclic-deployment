@@ -5,7 +5,6 @@ import AboutUs from "./components/Landing.Page/About";
 import StudyWithUs from "./components/Landing.Page/Study.Page";
 import LatestUpdates from "./components/Landing.Page/Updates";
 import Media from "./pages/Media/Media";
-import School from "./pages/StudyWithUs/StudyWithUs";
 import Contact from "./pages/Contact/Contact";
 import Prospector from "./pages/Prospector/Prospector";
 import Admin from "./pages/Admin/Admin";
@@ -19,6 +18,7 @@ import Comm from "./pages/Community/Community";
 import StatusStudent from "./pages/User_Profile/Status";
 import LoginS from "./pages/Application/Login";
 import SignupS from "./pages/Application/Signup";
+import { StudyWithUsStudent } from "./pages/StudyWithUs/StudyWithUs";
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
         <Route path="/community" element={<Comm />} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/media" element={<Media />} />
-        <Route path="/studyw" element={<School />} />
+        <Route path="/studyw" element={<StudyWithUsStudent />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/reset" element={<ForgotPassword />} />
         <Route path="/password" element={<ResetPassword />} />
